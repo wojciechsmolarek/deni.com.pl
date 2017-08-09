@@ -1,55 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
   <head>
+    <!-- SEO -->
     <meta charset="utf-8">
+    <title>DENI - Danuta Smolarek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title itemprop="name">DENI - Danuta Smolarek</title>
+    <meta itemprop="url" content="http://deni.com.pl">
+    <meta name="description" content="Szwalnia tapicerki meblowej. Narożniki, zestawy mebli, sofy, kanapy. Gwarancja wykonanania. Zapraszamy do współpracy.">
+    <meta itemprop="description" content="Szwalnia tapicerki meblowej. Narożniki, zestawy mebli, sofy, kanapy. Gwarancja wykonanania. Zapraszamy do współpracy.">
+    <meta name="keywords" content="szwalnia, tapicerka, tapicerka meblowa, meble, obicie, kanapa, narożnik">
+    <meta name="dcterms.subject" lang="pl" content="szwalnia, tapicerka, tapicerka meblowa, meble, obicie, kanapa, narożnik">
+    <meta name="application-name" content="Wytwórczo Usługowa Spółdzielnia Pracy - Jarocin">
+    <meta property="og:site_name" content="Wytwórczo Usługowa Spółdzielnia Pracy - Jarocin">
+    <meta property="og:url" content="http://deni.com.pl">
+    <meta property="og:title" content="DENI - Danuta Smolarek">
+    <meta property="og:image" content="">
+
+    <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css">
-    <title>deni.com.pl</title>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
   </head>
-  <body>
-    <header class="header">
-      <nav class="naavigation">
+  <body itemscope itemtype="https://schema.org/LocalBusiness">
+    <header itemscope itemtype="http://schema.org/WPHeader">
+      <nav class="header" itemscope itemtype="https://schema.org/SiteNavigationElement">
        <div class="wrapper">
           <h3 class="logo">dENI</h3>
+          <span class="hamburger"></span>
+          <input type="checkbox" class="checkbox">
           <ul class="menu">
-            <li class="menu-item">strona główna</li>
-            <li class="menu-item">projekty</li>
-            <li class="menu-item">lokalizacja</li>
-            <li class="menu-item">kontakt</li>
+            <li class="menu-item"><a href="#home">strona główna</a></li>
+            <li class="menu-item"><a href="#projects">projekty</a></li>
+            <li class="menu-item"><a href="#location">lokalizacja</a></li>
+            <li class="menu-item"><a href="#contact">kontakt</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main-content">
-      <article class="home">
-        <div class="home-wrapper">
-          <h1 class="main-title">P.H.U DENI Danuta Smolarek - Szwalnia tapicerki meblowej</h1>
+      <article class="home" id="home" role="main" itemscope itemtype="https://schema.org/WebPageElement">
+        <div class="wrapper">
+          <h1 class="main-title">DENI Danuta Smolarek - Szwalnia tapicerki meblowej</h1>
           <div class="hero-image"></div>
         </div>
       </article>
-      <article class="about">
+      <article class="about" itemscope itemtype="http://schema.org/Offer" >
         <div class="wrapper">
-          <img src="img/rose.png" alt="A rose on the couch">
-          <p class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          <img src="img/rose.jpg" alt="A rose on the couch" class="rose">
+          <p class="description">Jesteśmy firmą działającą od 2017 roku. Zajmujemy się szyciem tapicerki meblowej. Posiadamy doświadczoną kadrę pracowniczą oraz profesjonalne wyposażone szwalnie. Inwestujemy w profesjonalny sprzęt. Szyjemy tapicerkę na narożniki, zestawy mebli, sofy, kanapy itp. Gwarantujemy fachowe wykonanie. Zapraszamy do współpracy.</p>
         </div>
       </article>
-      <article class="projects">
+      <article class="projects" id="projects" itemscope itemtype="http://schema.org/Service">
         <div class="wrapper">
-
+          <h2 class="article-title">nasze prace</h2>
+          <img src="img/arrow.png" alt="arrow" class="arrow">
+          <div class="images-container">
+            <img src="img/cauch1.jpg" alt="cauch" class="cauch">
+            <img src="img/cauch2.jpg" alt="cauch" class="cauch">
+            <img src="img/cauch3.jpg" alt="cauch" class="cauch">
+          </div>
         </div>
       </article>
-      <article class="location">
+      <article class="location" id="location">
         <div class="wrapper">
-
+          <h2 class="article-title">lokalizacja</h2>
+          <img src="img/arrow.png" alt="arrow" class="arrow">
+          <address class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span class="address-content"><span>adres:</span> Jarocin ul. Wojska polskiego 47, 63-200 Jarocin</span>
+            <span class="address-content"><span>email:</span> kontakt@deni.com.pl</span>
+            <span class="address-content"><span>tel:</span> 607442592</span>
+          </address>
+          <div id="map">
+            <div style="display: none;" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                <meta itemprop="latitude" content="51.965808">
+                <meta itemprop="longitude" content="17.507175">
+            </div>
+          </div>
+          <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <meta itemprop="areaServed" content="Jarocin, Września, Poznań, Kępno">
+          </div>
         </div>
       </article>
-      <article class="contact">
+      <article class="contact" id="contact">
         <div class="wrapper">
-
+          <h2 class="article-title">kontakt</h2>
+          <img src="img/arrow.png" alt="arrow" class="arrow">
+          <form method="post" action="contact.php">
+              <fieldset>
+                  <input type="text" name="name" id="name" placeholder="imię i nazwisko" class="form-input" required>
+                  <input type="email" name="email" id="email" placeholder="e-mail" class="form-input" required>
+                  <textarea name="text" id="text" placeholder="wiadomość" class="form-input" style="width: 100%; min-height: 150px; max-height: 400px; padding-top: 10px; margin-bottom: 60px" required></textarea>
+                  <input id="submit" name="submit" type="submit" value="Wyślij">
+              </fieldset>
+          </form>
         </div>
       </article>
     </main>
-    <footer class="footer">
-
+    <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
+      <div class="wrapper">
+        <p>Wszelkie prawa zastrzeżone &copy; <span itemprop="dateModified">2017</span><span itemprop="author"><a href="http://deni.com.pl" rel="author" itemprop="url">deni.com.pl</a></span></p>
+      </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSY2Y2dwOtMO4gtCoPChhrYdMFLJmE4lk&callback=initMap"></script>
+    <script src="js/main.js"></script>    
   </body>
 </html>
