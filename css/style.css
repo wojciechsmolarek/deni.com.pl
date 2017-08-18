@@ -30,6 +30,16 @@ h1, h2, h3, h4, h5, h6 {
   top: 20px;
   left: 200px; }
 
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
 .header {
   width: 100%;
   height: 180px;
@@ -146,12 +156,12 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     margin: auto;
     width: 540px;
-    display: flex; }
+    display: block; }
     .main-content .contact fieldset .form-input {
       width: 100%;
       min-height: 60px;
       border: 2px solid #95989A;
-      margin: 40px 0;
+      margin: 20px 0;
       outline: 0;
       text-transform: uppercase;
       padding-left: 22px;
@@ -335,8 +345,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 19px; }
 
   .main-content .projects .images-container {
-    display: grid;
-    justify-content: center; }
+    display: block;
+    text-align: center; }
 
   .main-content .projects .images-container .cauch {
     width: 650px;
