@@ -26,10 +26,10 @@
   </head>
   <body itemscope itemtype="https://schema.org/LocalBusiness">
     <header itemscope itemtype="http://schema.org/WPHeader">
-      <nav class="header" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <nav class="header" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
        <div class="wrapper">
           <h3 class="logo">dENI</h3>
-          <span class="hamburger"><span class="visuallyhidden">Rozwiń/zwiń menu</span></span>
+          <span class="hamburger" role="button"><span class="visuallyhidden">Rozwiń/zwiń menu</span></span>
           <input type="checkbox" class="checkbox">
           <h2 class="visuallyhidden">Menu główne</h2>
           <ul class="menu">
@@ -60,9 +60,9 @@
           <h2 class="article-title">nasze prace</h2>
           <img src="img/arrow.png" alt="arrow" class="arrow">
           <div class="images-container">
-            <img src="img/cauch1.jpg" alt="cauch" class="cauch">
-            <img src="img/cauch2.jpg" alt="cauch" class="cauch">
-            <img src="img/cauch3.jpg" alt="cauch" class="cauch">
+            <img src="img/cauch1.jpg" alt="cauch" aria-describedby="work-1" class="cauch">
+            <img src="img/cauch2.jpg" alt="cauch" aria-describedby="work-2" class="cauch">
+            <img src="img/cauch3.jpg" alt="cauch" aria-describedby="work-3" class="cauch">
           </div>
         </div>
       </article>
@@ -76,6 +76,7 @@
             <span class="address-content"><span>tel:</span> 607442592</span>
           </address>
           <div id="map">
+            <span class="visuallyhidden">Mapa google</span>
             <div style="display: none;" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
                 <meta itemprop="latitude" content="51.965808">
                 <meta itemprop="longitude" content="17.507175">
