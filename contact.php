@@ -3,18 +3,15 @@ if(isset($_POST['email'])) {
 
     header('Content-Type: text/html; charset=utf-8');
 
-    //  E-MAIL
     $email_to = "biuro@deni.com.pl";
     $email_subject = "Wiadomosc ze strony deni.com.pl";
 
 
     function died($error) {
-        // your error code can go here
         echo "Wprowadzone dane sa niepoprawne ";
         die();
     }
 
-    // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['text'])) {
